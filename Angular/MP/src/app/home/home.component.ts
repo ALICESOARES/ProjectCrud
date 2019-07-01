@@ -12,7 +12,10 @@ export class HomeComponent implements OnInit {
 
   public perfil:any=[];
 
-  constructor() { }
+   PerfilStorage = [{name: "Leticia", idade: "12/10/1999", city: "Recife", musica: "reggae", filme: "ultimato"}]
+
+  constructor() { localStorage.setItem("Perfis", JSON.stringify(this.PerfilStorage));
+  this.perfil = JSON.parse( localStorage.getItem("Perfis"));}
 
   CriarPerfil( Perfil) {
     let data: any;

@@ -1,37 +1,38 @@
-<h3>Perfil</h3>
+<h3> Criar Perfil</h3>
 <br>
 
 <form class="container" #f="ngForm"(ngSubmit)="CriarPerfil(f)">
 
-   <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputname">INSERIR NOME </label>
-      <input type="NOME" class="form-control" name="name" ngModel placeholder="Inserir Nome ">
+   <div class="form-row m-1">
+    <div class="form-group col-md-12">
+      <input type="NOME" class="form-control" name="name" ngModel placeholder="Inserir Nome Ex: Maria ">
     </div>
-  </div>
-  <div class="form-group">
-    <label for="idade">IDADE</label>
-    <input type="text" class="form-control" name="idade"  ngModel placeholder="00/00/0000">
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="city">Cidade</label>
-      <input type="text" class="form-control" name="city" ngModel>
+    </div>
+  <div class="form-row m-1" >
+    <div class="form-group col-md-12">
+        <input type="text" class="form-control" name="idade"  ngModel placeholder="Inserir data de nascimento  00/00/0000">
+    </div>
+
+      </div>
+
+  <div class="form-row m-1">
+    <div class="form-group col-md-12">
+   <input type="text" class="form-control" name="city" ngModel placeholder="Inserir cidade atual Ex: Recife ">
     </div>
   </div>
 
 
-    <div class="form-row">
-      <div class="form-group col-md-6">
-        <label for="musica">Musica</label>
-        <input type="text" class="form-control" name="musica" ngModel>
+    <div class="form-row m-1">
+      <div class="form-group col-md-12">
+
+        <input type="text" class="form-control" name="musica" ngModel placeholder="Inserir genêro Musical Predileto Ex: Musica Classica ">
       </div>
     </div>
 
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="filme ">Filme</label>
-          <input type="text" class="form-control" name="filme" ngModel>
+      <div class="form-row m-1">
+        <div class="form-group col-md-12">
+
+          <input type="text" class="form-control" name="filme" ngModel placeholder="Inserir Filme Predileto Ex: Ultimato ">
         </div>
       </div>
 

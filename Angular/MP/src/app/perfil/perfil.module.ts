@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { PerfilComponent } from '../perfil/perfil.component';
 import { PerfilRoutingModule } from './perfil-routing.module';
 import { FormsModule } from '@angular/forms';
+import { EditComponent } from './edit/edit.component';
 
 
 
 @NgModule({
-  declarations: [PerfilComponent],
+  declarations: [PerfilComponent, EditComponent],
   imports: [
     CommonModule,
     PerfilRoutingModule,

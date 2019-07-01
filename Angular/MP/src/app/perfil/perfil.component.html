@@ -1,10 +1,11 @@
-<table class="table table-sm">
+
+<table class="table ">
   <thead>
     <tr>
-      <th scope="col">#</th>
+
       <th scope="col">avatar</th>
       <th scope="col">nome</th>
-      <th scope="col">idade</th>
+      <th scope="col">data de nascimento</th>
       <th scope="col">cidade</th>
       <th scope="col">musica</th>
       <th scope="col">filme</th>
@@ -14,15 +15,26 @@
   <tbody *ngFor="let perfil of perfis">
     <tr>
 
-      <td>{{perfil.id}}</td>
-      <td></td>
+
+      <td><div>
+          <img src="assets/img/perfil-padrao.jpeg" alt="imagempadrao"  class="rounded mr-3" height="48">
+                            </div></td>
       <td>{{perfil.name}}</td>
       <td>{{perfil.idade}}</td>
       <td>{{perfil.city}}</td>
       <td>{{perfil.musica}}</td>
       <td>{{perfil.filme}}</td>
-      <td></td>
+      <td class="table-action">
+
+        <a class="btn btn-outline-dark action-icon" [routerLink]="['/', 'perfil', perfil.id]">
+          <span class="fa fa-edit"></span>
+        </a>
+        <button class="btn btn-outline-dark action-icon" (click)="removeperfil(perfil.id)">
+          <span class="fa fa-trash"></span>
+        </button>
+      </td>
     </tr>
 
   </tbody>
 </table>
+
