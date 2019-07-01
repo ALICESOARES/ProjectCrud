@@ -1,0 +1,28 @@
+<table class="table table-sm">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">avatar</th>
+      <th scope="col">nome</th>
+      <th scope="col">idade</th>
+      <th scope="col">cidade</th>
+      <th scope="col">musica</th>
+      <th scope="col">filme</th>
+      <th scope="col">action</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let perfil of perfis">
+    <tr>
+
+      <td>{{perfil.id}}</td>
+      <td></td>
+      <td>{{perfil.name}}</td>
+      <td>{{perfil.idade}}</td>
+      <td>{{perfil.city}}</td>
+      <td>{{perfil.musica}}</td>
+      <td>{{perfil.filme}}</td>
+      <td></td>
+    </tr>
+
+  </tbody>
+</table>
